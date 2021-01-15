@@ -63,7 +63,7 @@
 
 ### Collaboration 10%
 * There are no major disparities in the number of GitHub contributions among group members.
-
+---
 #### Considerations
 > CSS-in-JS\
 > Stripe payment platform
