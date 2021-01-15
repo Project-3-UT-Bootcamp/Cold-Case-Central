@@ -12,7 +12,7 @@
 ## Project Description (*incomplete*)
 ---
 ## Installation (*incomplete*)
-`npm i` `npx create-react-app my-app` `npm start`
+`npm i` `npm i dotenv` `npx create-react-app my-app` `npm start`
 ---
 ## Grading Requirements
 
