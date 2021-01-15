@@ -7,6 +7,20 @@
 | Mario Essig      | -             |
 | Lorena Kell      | -             |
 
+|Table of Contents|
+|:---:|
+|(Description)[#project-description]|
+|(Installation)[#installation]|
+|(Grading Requirements)[#grading-requirements]|
+|(License)[#license]|
+|(Contact)[#contact]|
+
+---
+#Project Description *incomplete*
+---
+# Installation *incomplete*
+`npm i` `npx create-react-app my-app` `npm start`
+---
 ## Grading Requirements
 
 ### Technical Acceptance Criteria: 25%
@@ -67,3 +81,7 @@
 #### Considerations
 > CSS-in-JS\
 > Stripe payment platform
+---
+# License *incomplete*
+---
+# Contact *incomplete*
