@@ -9,11 +9,11 @@
 
 |Table of Contents|
 |:---:|
-|(Description)[#project-description]|
-|(Installation)[#installation]|
-|(Grading Requirements)[#grading-requirements]|
-|(License)[#license]|
-|(Contact)[#contact]|
+|[Description](#project-description)|
+|[Installation](#installation)|
+|[Grading Requirements](#grading-requirements)|
+|[License](#license)|
+|[Contact](#contact)|
 
 ---
 #Project Description *incomplete*
