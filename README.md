@@ -1,12 +1,5 @@
 # proxy
 
-| Name             | Role          |
-| :---------------:|:-------------:|
-| Sarah Safarzadeh | -             |
-| Amanda Babineaux | -             |
-| Mario Essig      | -             |
-| Lorena Kell      | -             |
-
 |Table of Contents|
 |:---:|
 |[Description](#project-description)|
@@ -85,3 +78,10 @@
 # License *incomplete*
 ---
 # Contact *incomplete*
+
+| Name             | Role          |
+| :---------------:|:-------------:|
+| Sarah Safarzadeh | -             |
+| Amanda Babineaux | -             |
+| Mario Essig      | -             |
+| Lorena Kell      | -             |
