@@ -9,9 +9,9 @@
 |[Contact](#contact)|
 
 ---
-#Project Description *incomplete*
+## Project Description (*incomplete*)
 ---
-# Installation *incomplete*
+## Installation (*incomplete*)
 `npm i` `npx create-react-app my-app` `npm start`
 ---
 ## Grading Requirements
