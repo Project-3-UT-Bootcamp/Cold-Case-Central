@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "mysteries",
   "version": "0.1.0",
   "private": true,
@@ -13,5 +14,20 @@
     "client": "cd .. && cd client && npm run start",
     "build": "cd .. && cd client && npm run build",
     "seed": "node db/seed.js"
+=======
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+>>>>>>> develop
   }
 }
