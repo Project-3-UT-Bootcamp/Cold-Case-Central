@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "dotenv": "^8.2.0"
-  }
+  },
+  "name": "proxy",
+  "description": "|Table of Contents| |:---:| |[Description](#project-description)| |[Installation](#installation)| |[Grading Requirements](#grading-requirements)| |[License](#license)| |[Contact](#contact)|",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Project-3-UT-Bootcamp/proxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Project-3-UT-Bootcamp/proxy/issues"
+  },
+  "homepage": "https://github.com/Project-3-UT-Bootcamp/proxy#readme"
 }
