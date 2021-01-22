@@ -6,4 +6,17 @@ function Signup() {
     const [formState, setFormState] = useState(
         { email: '', password: ''});
     const [addUser] = useMutation(ADD_USER);
+
+    // 'submit' event listener
+    const handleFormSubmit = async event => {
+        event.preventDefault();
+        const mutationResponse = await addUser({
+            variables: {
+                email: formState.email,
+                password: formState.password,
+                firstName: formState.firstName,
+                lastName: formState.lastName
+            }
+        });
+    }
 }
