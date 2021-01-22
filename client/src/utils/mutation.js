@@ -21,3 +21,13 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const ADD_POST = gql`
+mutation {
+  addPost($title: String!, $body: String!) {
+    _id
+    title
+    body
+  }
+}
+`;
