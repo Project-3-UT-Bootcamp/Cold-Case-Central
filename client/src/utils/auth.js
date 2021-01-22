@@ -1,5 +1,5 @@
 // install jwt-decode
-import decode from "jwt-decode";
+import jwt_decode from "jwt-decode";
 
 class AuthService {
   loggedIn() {

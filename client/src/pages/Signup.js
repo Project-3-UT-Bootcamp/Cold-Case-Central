@@ -18,10 +18,9 @@ function Signup(props) {
         lastName: formState.lastName,
       },
     });
-    // need to install jwt-decode
     const token = mutationResponse.data.addUser.token;
     // create Auth.js in utils and uncomment below
-    // Auth.login(tokin);
+    Auth.login(tokin);
   };
 
   const handleChange = (event) => {
