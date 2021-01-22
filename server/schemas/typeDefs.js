@@ -20,4 +20,10 @@ const typeDefs = gql`
         login(email: String!, password: String!): User
         addUser(username: String!, email: String!, password: String!): User
     }
+
+    type Auth {
+        token: ID!
+        user: User
+      }
+      
 `;
