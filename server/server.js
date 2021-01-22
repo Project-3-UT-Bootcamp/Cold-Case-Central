@@ -1,18 +1,11 @@
-// import express
-const express = require('express');
+const express = require('express'); // import express
+const path = require('path'); // import path (to access file and directory paths)
 
-// test info
-const { animals } = require('./data/animals.json');
+const PORT = process.env.PORT || 3001; // define local port
+const app = express(); // instantiate express server
 
-// define local port
-const PORT = process.env.PORT || 3001;
-
-// instantiate express server
-const app = express();
-
-app.get('/api/animals', (req, res) => {
-    res.send('Hello!');
-})
+app.use(express.urlencoded({ extended: true })); // parse incoming string or array data
+app.use(express.json()); // parse incoming JSON data
 
 // connect to server
 app.listen(PORT, () => {
