@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "express": "^4.17.1"
+    "env": "0.0.2",
+    "express": "^4.17.1",
+    "graphql": "^15.4.0",
+    "mongoose": "^5.11.13"
   }
 }
