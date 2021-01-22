@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ADD_USER } from "../utils/mutation";
 import { useMutation } from "@apollo/react-hooks";
+// import Auth from "../utils/auth";
 
 function Signup(props) {
   const [formState, setFormState] = useState({ email: "", password: "" });
@@ -17,6 +18,10 @@ function Signup(props) {
         lastName: formState.lastName,
       },
     });
+    // need to install jwt-decode
+    const token = mutationResponse.data.addUser.token;
+    // create Auth.js in utils and uncomment below
+    // Auth.login(tokin);
   };
 
   const handleChange = (event) => {
