@@ -6,7 +6,8 @@
     "apollo-server-express": "^2.19.2",
     "bcrypt": "^5.0.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.13"
+    "mongoose": "^5.11.13",
+    "mongoose-type-url": "^2.1.0"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
