@@ -1,11 +1,17 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+
+// page imports
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+
+// component import
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
