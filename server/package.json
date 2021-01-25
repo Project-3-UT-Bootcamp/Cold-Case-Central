@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "apollo-server-express": "^2.19.2",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.13"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
