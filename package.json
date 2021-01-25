@@ -4,10 +4,13 @@
   "description": "|Table of Contents| |:---:| |[Description](#project-description)| |[Installation](#installation)| |[Grading Requirements](#grading-requirements)| |[License](#license)| |[Contact](#contact)|",
   "main": "index.js",
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "bootstrap": "^4.6.0",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.13"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
