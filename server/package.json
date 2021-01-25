@@ -1,11 +1,10 @@
 {
-<<<<<<< HEAD
   "name": "mysteries",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-  },
-  "devDependencies": {
+    "apollo-server-express": "^2.19.2",
+    "jsonwebtoken": "^8.5.1"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -14,20 +13,5 @@
     "client": "cd .. && cd client && npm run start",
     "build": "cd .. && cd client && npm run build",
     "seed": "node db/seed.js"
-=======
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
->>>>>>> develop
   }
 }
