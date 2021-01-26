@@ -6,7 +6,7 @@
   "name": "proxy",
   "description": "|Table of Contents| |:---:| |[Description](#project-description)| |[Installation](#installation)| |[Grading Requirements](#grading-requirements)| |[License](#license)| |[Contact](#contact)|",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server/server.js",
   "devDependencies": {
     "concurrently": "^5.3.0"
   },
