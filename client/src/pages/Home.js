@@ -1,4 +1,5 @@
 import React from 'react';
+import { useQuery } from '@apollo/react-hooks';
 
 const Home = () => {
     return (
@@ -8,4 +9,6 @@ const Home = () => {
           </div>
       </main>
     )
-}
+};
+
+export default Home;
