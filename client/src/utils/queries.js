@@ -23,3 +23,21 @@ export const QUERY_CASES = gql`
     }
   }
 `;
+
+export const QUERY_CASE = gql`
+  query case($id: ID!) {
+    case(_id: $id) {
+      _id
+      caseText
+      createdAt
+      username
+      commentCount
+      comments {
+        _id
+        createdAt
+        username
+        commentBody
+      }
+    }
+  }
+`;
