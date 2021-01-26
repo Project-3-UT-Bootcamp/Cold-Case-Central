@@ -2,10 +2,10 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <main>
-        <div>
-          <div>{/* PRINT CASE LIST */}</div>
-        </div>
+        <main className="main_wrapper">
+          <div>
+            <div>{/* PRINT CASE LIST */}</div>
+          </div>
       </main>
     )
 }
