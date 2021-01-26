@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css';
+import Newspaper from "./Components/Newspaper"
 
 // page imports
 import Home from "./pages/Home";
@@ -24,6 +25,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Newspaper/>
     </div>
   );
 }
