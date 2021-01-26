@@ -1,20 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
     return (
         <header>
             <div>
-                <h1>COLD CASE CENTRAL</h1>
+                <Link to="/">
+                    <h1>COLD CASE CENTRAL</h1>
+                </Link>
                 <div className="double-border"></div>
                 <nav>
                     <div>
                         Today's Date
                     </div>
-                    <ul>
-                        <li>Login</li>
-                        <li>SignUp</li>
-                    </ul>
+                    <Link to="/login">Login</Link>
+                    <Link to="/signup">Signup</Link>
                 </nav>
                 <div className="double-border"></div>
             </div>
