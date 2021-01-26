@@ -15,6 +15,7 @@ import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import SingleCase from './pages/SingleCase';
 import Signup from './pages/Signup';
+import Profile from './pages/Profile';
 
 const client = new ApolloClient({
   uri: '/graphql'
@@ -32,6 +33,8 @@ function App() {
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={Signup} />
                 <Route exact path="/case/:id" component={SingleCase} />
+                <Route exact path="/profile" component={Profile} />
+
 
                 <Route component={NoMatch} />
               </Switch>
