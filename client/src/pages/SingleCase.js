@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useQuery } from '@apollo/react-hooks';
-import { QUERY_THOUGHT } from '../utils/queries';
+import { QUERY_CASE } from '../utils/queries';
 
 const SingleCase = (props) => {
   const { id: caseId } = useParams();
