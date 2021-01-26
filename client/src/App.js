@@ -17,7 +17,7 @@ import SingleCase from './pages/SingleCase';
 import Signup from './pages/Signup';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:3001/graphql'
+  uri: '/graphql'
 });
 
 function App() {
