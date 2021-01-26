@@ -1,8 +1,33 @@
 {
   "dependencies": {
-    "env": "0.0.2",
-    "express": "^4.17.1",
-    "graphql": "^15.4.0",
-    "mongoose": "^5.11.13"
-  }
+    "dotenv": "^8.2.0",
+    "if-env": "^1.0.4"
+  },
+  "name": "proxy",
+  "description": "|Table of Contents| |:---:| |[Description](#project-description)| |[Installation](#installation)| |[Grading Requirements](#grading-requirements)| |[License](#license)| |[Contact](#contact)|",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "npm init -y && npm install if-env && npm install -D concurrently && cd client && npm i && npm i apollo-boost graphql graphql-tag @apollo/react-hooks react-router-dom jwt-decode && cd ../server && npm i && npm i apollo-server-express jsonwebtoken",
+    "seed": "cd server && npm run seed",
+    "heroku-postbuild": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Project-3-UT-Bootcamp/proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Project-3-UT-Bootcamp/proxy/issues"
+  },
+  "homepage": "https://github.com/Project-3-UT-Bootcamp/proxy#readme",
+  "keywords": []
 }
