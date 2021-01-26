@@ -1,5 +1,6 @@
 const express = require('express'); // import express
 const path = require('path'); // import path (to access file and directory paths)
+const { authMiddleware } = require('./utils/auth');
 
 const PORT = process.env.PORT || 3001; // define local port
 const app = express(); // instantiate express server
@@ -10,7 +11,7 @@ app.use(express.json()); // parse incoming JSON data
 const server = new ApolloServer({
     typeDefs,
     resolvers,
-    context: ({ req }) => req.headers
+    context: authMiddleware
   });
 
 // connect to server
