@@ -20,7 +20,7 @@ const CommentList = ({ comments, title }) => {
               comment on {comment.createdAt}
             </p>
             <div className="">
-              <p>{comments.commentText}</p>
+              <p>{comment.commentText}</p>
               <p className="">
                 Comments: {comment.commentCount} || Click to{' '}
                 {comments.commentCount ? 'see' : 'start'} the discussion!
