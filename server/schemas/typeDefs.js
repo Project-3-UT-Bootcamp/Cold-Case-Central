@@ -12,11 +12,12 @@ const typeDefs = gql`
         caseAuthor: String
         createdAt: String
         username: String
+        comments: [Comment]
     }
 
     type Comment {
         _id: ID
-        commentBody: String
+        commentText: String
         createdAt: String
         username: String
 
@@ -26,7 +27,9 @@ const typeDefs = gql`
         _id: ID
         username: String
         email: String
-        
+        friendCount: Int
+        cases: [Case]
+        friends: [User]
     }
 
     type Query {
