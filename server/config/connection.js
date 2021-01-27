@@ -5,7 +5,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/cold-case-centr
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
-    useFindAndModify
+    useFindAndModify: false,
 });
 
 // export connection

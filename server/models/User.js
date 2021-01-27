@@ -47,7 +47,7 @@ const UserSchema = new Schema(
 );
 
 // set up pre-save middleware to create password
-userSchema.pre('save', async function(next) {
+UserSchema.pre('save', async function(next) {
     if (this.isNew || this.isModified('password')) {
         const saltRounds = 10;
         this.password = await bcrypt.hash(this.password, saltRounds);
@@ -57,16 +57,16 @@ userSchema.pre('save', async function(next) {
 })
 
 // compare the incoming password with the hashed password
-userSchema.methods.isCorrectPassword = async function(password) {
+UserSchema.methods.isCorrectPassword = async function(password) {
     return bcrypt.compare(password, this.password);
 }
 
-userSchema.virtual('friendCount').get(function() {
+UserSchema.virtual('friendCount').get(function() {
     return this.friends.length;
 })
 
 // create the User model using the userSchema
-const User = model('User', userSchema);
+const User = model('User', UserSchema);
 
 // export the User model
 module.exports = User;
