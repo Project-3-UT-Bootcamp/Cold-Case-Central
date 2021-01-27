@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { useMutation } from '@apollo/react-hooks';
+import { ADD_COMMENT } from '../../utils/mutations';
 
 const CommentForm = () => {
   const [commentText, setText] = useState("");
   const [characterCount, setCharacterCount] = useState(0);
+  const [addComment, { error }] = useMutation(ADD_COMMENT);
 
   //event listeners
   const handleChange = (event) => {
@@ -11,10 +14,21 @@ const CommentForm = () => {
       setCharacterCount(event.target.value.length);
     }
   };
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = async event => {
     event.preventDefault();
-    setText("");
-    setCharacterCount(0);
+  
+    try {
+      // add comment to database
+      await addComment({
+        variables: { commentText }
+      });
+  
+      // clear form value
+      setText('');
+      setCharacterCount(0);
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   return (
