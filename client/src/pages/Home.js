@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/react-hooks";
 import { QUERY_CASES } from "../utils/queries";
+import CommentForm from '../components/CommentForm';
 
 import CaseList from "../components/CaseList";
 
@@ -18,6 +19,7 @@ const Home = () => {
           ) : (
           <CaseList cases={cases}/>
           )}
+          <CommentForm/>
         </div>
       </div>
     </main>
