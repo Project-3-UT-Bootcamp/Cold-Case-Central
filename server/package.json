@@ -5,17 +5,21 @@
   "dependencies": {
     "apollo-server-express": "^2.19.2",
     "bcrypt": "^5.0.0",
+    "faker": "^5.2.0",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.13",
-    "mongoose-type-url": "^2.1.0"
+    "mongoose-type-url": "^2.1.0",
+    "nodemon": "^2.0.7"
   },
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "node server.js",
+    "start2": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
+    "watch": "nodemon",
     "start:dev": "concurrently \"nodemon server.js --ignore 'client/*'\" \"cd .. && npm run client\"",
     "client": "cd .. && cd client && npm run start",
     "build": "cd .. && cd client && npm run build",
-    "seed": "node db/seed.js"
+    "seed": "node seeders/seeds.js"
   }
 }

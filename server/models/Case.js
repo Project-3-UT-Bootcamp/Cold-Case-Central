@@ -43,12 +43,12 @@ const CaseSchema = new Schema({
     }
 });
 
-caseSchema.virtual('commentCount').get(function() {
+CaseSchema.virtual('commentCount').get(function() {
     return this.comments.length;
 })
 
 // create the Case model using the caseSchema
-const Case = model('Case', caseSchema);
+const Case = model('Case', CaseSchema);
 
 // export the Case model
 module.exports = Case;

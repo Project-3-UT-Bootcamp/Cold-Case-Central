@@ -4,8 +4,7 @@ const mongoose = require('mongoose'); // import mongoose
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/cold-case-central', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify
+    useCreateIndex: true
 });
 
 // export connection
