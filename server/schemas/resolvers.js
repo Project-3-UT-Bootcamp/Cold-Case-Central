@@ -5,8 +5,9 @@ const { User, Case } = require('../models');
 
 const resolvers = {
   Query: {
-    cases: async () => {
-      return Case.find().sort({ createdAt: -1 });
+    cases: async (parent, { username }) => {
+      const params = username ? { username } : {};
+      return Case.find(params).sort({ createdAt: -1 });
     }
   }
 };
