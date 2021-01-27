@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMutation } from '@apollo/react-hooks';
 import { ADD_COMMENT } from '../../utils/mutations';
-import { QUERY_COMMENTS, QUERY_ME } from '../../utils/queries';
+import { QUERY_COMMENTS } from '../../utils/queries';
 
 const CommentForm = () => {
   const [commentText, setText] = useState("");
@@ -19,12 +19,12 @@ const CommentForm = () => {
         console.error(e);
       }
   
-      // update me object's cache, appending new thought to the end of the array
-      const { me } = cache.readQuery({ query: QUERY_ME });
-      cache.writeQuery({
-        query: QUERY_ME,
-        data: { me: { ...me, comments: [...me.comments, addComment] } }
-      });
+    //   // update me object's cache, appending new thought to the end of the array
+    //   const { me } = cache.readQuery({ query: QUERY_ME });
+    //   cache.writeQuery({
+    //     query: QUERY_ME,
+    //     data: { me: { ...me, comments: [...me.comments, addComment] } }
+    //   });
     }
   });
 

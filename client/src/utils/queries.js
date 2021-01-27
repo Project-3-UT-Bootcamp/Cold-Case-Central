@@ -11,9 +11,9 @@ export const QUERY_COMMENTS = gql`
   }
 `;
 
-export const QUERY_ME = gql `
+// export const QUERY_ME = gql `
 
-`
+// `
 
 export const QUERY_CASES = gql`
   {
