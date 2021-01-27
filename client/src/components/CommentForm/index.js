@@ -6,7 +6,6 @@ import { QUERY_COMMENTS, QUERY_ME } from '../../utils/queries';
 const CommentForm = () => {
   const [commentText, setText] = useState("");
   const [characterCount, setCharacterCount] = useState(0);
-
   const [addComment, { error }] = useMutation(ADD_COMMENT, {
     update(cache, { data: { addComment } }) {
       try {
@@ -24,7 +23,7 @@ const CommentForm = () => {
       const { me } = cache.readQuery({ query: QUERY_ME });
       cache.writeQuery({
         query: QUERY_ME,
-        data: { me: { ...me, thoughts: [...me.comments, addComment] } }
+        data: { me: { ...me, comments: [...me.comments, addComment] } }
       });
     }
   });
