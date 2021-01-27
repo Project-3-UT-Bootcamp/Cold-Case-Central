@@ -7,22 +7,22 @@ const CommentList = ({ comments, title }) => {
   }
   return (
     <div>
-      <h3>{title}</h3>
+      <h3>Comments</h3>
       {comments &&
         comments.map(comments => (
-          <div key={comment._id} className="">
+          <div key={comments._id} className="">
             <p className="">
                 <Link
-                to={`/profile/${comment.username}`}
+                to={`/profile/${comments.username}`}
                 >
               {comments.username}
               </Link>{''}
-              comment on {comment.createdAt}
+              comment on {comments.createdAt}
             </p>
             <div className="">
-              <p>{comment.commentText}</p>
+              <p>{comments.commentText}</p>
               <p className="">
-                Comments: {comment.commentCount} || Click to{' '}
+                Comments: {comments.commentCount} || Click to{' '}
                 {comments.commentCount ? 'see' : 'start'} the discussion!
               </p>
             </div>

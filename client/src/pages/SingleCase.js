@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/react-hooks";
 import { QUERY_CASE } from "../utils/queries";
+import CommentList from '../components/CommentList';
 
 const SingleCase = (props) => {
   const { id: caseId } = useParams();
@@ -25,9 +26,14 @@ const SingleCase = (props) => {
       case on {cases.createdAt}
     </p>
     <div className="card-body">
-      <p>{cases.caseText}</p>
+      <p>Case Title: {cases.caseTitle}</p>
+      <p>Case Description: {cases.caseDescription}</p>
+      <p>Case Status: {cases.caseStatus}</p>
+      <p>Case Start Date: {cases.caseStartDate}</p>
     </div>
   </div>
+
+  {cases.commentCount > 0 && <CommentList comments={cases.comments} />}
 </div>
   );
 };

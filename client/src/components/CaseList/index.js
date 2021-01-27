@@ -7,7 +7,7 @@ const CaseList = ({ cases, title }) => {
   }
   return (
     <div>
-      <h3>{title}</h3>
+      <h3>Today's Cold Cases:</h3>
       {cases &&
         cases.map(cases => (
           <div key={cases._id} className="">
@@ -16,11 +16,17 @@ const CaseList = ({ cases, title }) => {
               case on {cases.createdAt}
             </p>
             <div className="">
-              <p>{cases.caseText}</p>
+              <Link to={`/case/${cases._id}`}>
+                <p>Case Title:{cases.caseTitle}</p>
+                </Link>
+              <p>Case Description: {cases.caseDescription}</p>
+              <p>Case Status: {cases.caseStatus}</p>
+              <p>Case Start Date: {cases.caseStartDate}</p>
               <p className="">
                 Comments: {cases.commentCount} || Click to{' '}
                 {cases.commentCount ? 'see' : 'start'} the discussion!
               </p>
+              <div className="double-border"></div>
             </div>
           </div>
         ))}
