@@ -1,31 +1,32 @@
-import React from 'react';
+import React from "react";
+import './App.css';
+import Newspaper from "./Components/Newspaper"
 
-// import Apollo hooks and modules
-import { ApolloProvider } from '@apollo/react-hooks';
-import ApolloClient from 'apollo-boost';
+// page imports
+import Home from "./pages/Home";
+import Login from "./pages/Login";
 
-// import components
-import Header from './components/Header';
-import Footer from './components/Footer';
-
-// import pages
-import Home from './pages/Home';
-
-const client = new ApolloClient({
-  uri: '/graphql'
-});
+// component import
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <ApolloProvider client={client}>
-      <div>
-        <Header />
-          <div>
-            <Home />
-          </div>
-        <Footer />
-      </div>
-    </ApolloProvider>
+    <div className="App">
+      <header className="App-header">
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+      <Newspaper/>
+    </div>
   );
 }
 

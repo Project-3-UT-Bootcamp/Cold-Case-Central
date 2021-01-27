@@ -1,5 +1,11 @@
 {
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
+    "@apollo/react-hooks": "4.0.0",
+    "@testing-library/jest-dom": "5.11.9",
     "dotenv": "^8.2.0",
     "if-env": "^1.0.4"
   },
@@ -30,4 +36,23 @@
   },
   "homepage": "https://github.com/Project-3-UT-Bootcamp/proxy#readme",
   "keywords": []
+},
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
