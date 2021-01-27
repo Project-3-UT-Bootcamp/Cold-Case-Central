@@ -34,7 +34,6 @@ const CaseSchema = new Schema({
         default: Date.now,
         get: timestamp => dateFormat(timestamp)
     },
-
     comments: [commentSchema]
 },
 {
