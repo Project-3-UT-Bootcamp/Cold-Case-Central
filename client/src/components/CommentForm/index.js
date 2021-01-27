@@ -4,7 +4,7 @@ const CommentForm = () => {
   const [commentText, setText] = useState("");
   const [characterCount, setCharacterCount] = useState(0);
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     if (event.target.value.length <= 500) {
       setText(event.target.value);
       setCharacterCount(event.target.value.length);
@@ -13,7 +13,9 @@ const CommentForm = () => {
 
   return (
     <div>
-      <p className="m-0">Character Count: 0/500</p>
+      <p className={`m-0 ${characterCount === 500 ? "text-error" : ""}`}>
+        Character Count: {characterCount}/500
+      </p>{" "}
       <form className="flex-row justify-center justify-space-between-md align-stretch">
         <textarea
           placeholder="Here's a new comment..."
