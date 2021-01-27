@@ -1,11 +1,34 @@
 import React, { useState } from "react";
 import { useMutation } from '@apollo/react-hooks';
 import { ADD_COMMENT } from '../../utils/mutations';
+import { QUERY_COMMENTS, QUERY_ME } from '../../utils/queries';
 
 const CommentForm = () => {
   const [commentText, setText] = useState("");
   const [characterCount, setCharacterCount] = useState(0);
   const [addComment, { error }] = useMutation(ADD_COMMENT);
+
+  const [addComment, { error }] = useMutation(ADD_COMMENT, {
+    update(cache, { data: { addComment } }) {
+      try {
+        // could potentially not exist yet, so wrap in a try...catch
+        const { comments } = cache.readQuery({ query: QUERY_COMMENTS });
+        cache.writeQuery({
+          query: QUERY_COMMENTS,
+          data: { comments: [addComment, ...comments] }
+        });
+      } catch (e) {
+        console.error(e);
+      }
+  
+      // update me object's cache, appending new thought to the end of the array
+      const { me } = cache.readQuery({ query: QUERY_ME });
+      cache.writeQuery({
+        query: QUERY_ME,
+        data: { me: { ...me, thoughts: [...me.thoughts, addThought] } }
+      });
+    }
+  });
 
   //event listeners
   const handleChange = (event) => {
