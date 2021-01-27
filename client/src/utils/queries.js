@@ -41,3 +41,19 @@ export const QUERY_CASE = gql`
     }
   }
 `;
+
+export const QUERY_ME = gql`
+  {
+    me {
+      _id
+      username
+      email
+      commentCount
+      comments {
+        _id
+        commentText
+        createdAt
+      }
+    }
+  }
+`;
