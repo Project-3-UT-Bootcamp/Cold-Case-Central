@@ -14,8 +14,18 @@ const typeDefs = gql`
         username: String
     }
 
+    type User {
+        _id: ID
+        username: String
+        email: String
+        
+    }
+
     type Query {
-        cases(username: String): [Case]
+        users: [User]
+        user(username: String!): User
+        cases: [Case]
+        case(_id: ID!): Case
     }
 `;
 
