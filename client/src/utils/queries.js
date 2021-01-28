@@ -5,6 +5,7 @@ export const QUERY_CASES = gql`
     cases(username: $username) {
       _id
       caseTitle
+      caseSummary
       caseDescription
       caseStatus
       caseStartDate

@@ -5,6 +5,7 @@ export const ADD_CASE = gql`
     addCase(caseTitle: $caseTitle, caseDescription: $caseDescription, caseStatus: $caseStatus, caseStartDate: $caseStartDate) {
       _id
       caseTitle
+      caseSummary
       caseDescription
       caseStatus
       caseStartDate

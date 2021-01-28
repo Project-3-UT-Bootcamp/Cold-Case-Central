@@ -7,6 +7,7 @@ const typeDefs = gql`
     type Case {
         _id: ID
         caseTitle: String
+        caseSummary: String
         caseDescription: String
         caseStartDate: DateTime
         caseStatus: String
