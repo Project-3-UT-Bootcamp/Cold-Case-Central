@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { QUERY_CASES, QUERY_ME_BASIC } from "../utils/queries";
-import CommentForm from '../components/CommentForm';
+import { QUERY_CASES } from "../utils/queries";
+import CaseForm from '../components/CaseForm';
 import Auth from '../utils/auth';
 
 import CaseList from "../components/CaseList";
@@ -15,7 +15,11 @@ const Home = () => {
   return (
     <main>
       <div>
-      <CommentForm/>
+        {loggedIn && (
+          <div>
+            <CaseForm/>
+          </div>
+        )}
         <div>
           {loading ? (
             <div>Loading...</div>
