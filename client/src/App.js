@@ -35,7 +35,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div>
+        <div class="container">
           <Header />
             <div>
               <Switch>
