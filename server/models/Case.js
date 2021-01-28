@@ -20,7 +20,7 @@ const CaseSchema = new Schema({
         type: String,
         required: 'This case should have a story!',
         minlength: 1,
-        maxlength: 5000
+        maxlength: 10000
     },
     caseStartDate: {
         type: Date,
