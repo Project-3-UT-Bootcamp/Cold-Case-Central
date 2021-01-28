@@ -25,7 +25,7 @@ const SingleCase = (props) => {
         <div className="text-center">
           <p>Case Start Date: <span><strong>{cases.caseStartDate}</strong></span></p>
           <p>Case Status: <span><strong>{cases.caseStatus}</strong></span></p>
-          <p>Added to CCC on: <span><strong>{cases.createdAt}</strong></span> by <span><strong>{cases.username}</strong></span></p>
+          <p>Added to Cold Case Central on: <span><strong>{cases.createdAt}</strong></span> by <span><strong>{cases.username}</strong></span></p>
         </div>
 
         <div>
