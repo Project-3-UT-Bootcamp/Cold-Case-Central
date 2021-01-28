@@ -11,7 +11,7 @@ const CaseList = ({ cases, title }) => {
       <div className="bg-dark">
         <h2 className="english-font py-2 text-center fs-2 text-white">Latest Cases</h2>
       </div>
-      <div>
+      <div className="py-3">
         {cases &&
           cases.map(cases => (
             <div key={cases._id}>
@@ -19,10 +19,12 @@ const CaseList = ({ cases, title }) => {
                 {cases.caseTitle}
               </Link></h3>
               <p className="fs-6"><strong>{cases.createdAt}</strong> by <strong>{cases.username}</strong></p>
-              <div>Case Status: <strong>{cases.caseStatus}</strong></div>
-              <div>Case Start Date: <strong>{cases.caseStartDate}</strong></div>
+              <div className="py-2">
+                <div>Case Status: <strong>{cases.caseStatus}</strong></div>
+                <div>Case Start Date: <strong>{cases.caseStartDate}</strong></div>
+              </div>
               <div>
-                <p>Case Description: {cases.caseDescription}</p>
+                <p className="text-truncate">Case Description: {cases.caseDescription}</p>
                 <p></p>
                 <p className="">
                   Comments: {cases.commentCount} || Click to{' '}
