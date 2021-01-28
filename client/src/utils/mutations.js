@@ -19,12 +19,16 @@ export const ADD_CASE = gql`
 
 `;
 export const ADD_COMMENT = gql`
-  mutation addComment($commentText: String!) {
-    addComment(commentText: $commentText) {
+  mutation addComment($caseId: ID!, $commentText: String!) {
+    addComment(caseId: $caseId, commentText: $commentText) {
       _id
-      commentText
-      createdAt
-      username
+      commentCount
+      comments {
+        _id
+        commentText
+        createdAt
+        username
+      }
     }
   }
 `;

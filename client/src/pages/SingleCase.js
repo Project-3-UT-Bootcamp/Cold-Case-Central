@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/react-hooks";
 import { QUERY_CASE } from "../utils/queries";
 import CommentList from '../components/CommentList';
+import CommentForm from '../components/CommentForm';
+import Auth from '../utils/auth';
 
 const SingleCase = (props) => {
   const { id: caseId } = useParams();
@@ -34,6 +36,7 @@ const SingleCase = (props) => {
   </div>
 
   {cases.commentCount > 0 && <CommentList comments={cases.comments} />}
+  {Auth.loggedIn() && <CommentForm caseId={cases._id} />}
 </div>
   );
 };
