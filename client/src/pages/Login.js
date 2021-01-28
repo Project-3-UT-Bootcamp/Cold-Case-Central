@@ -45,17 +45,19 @@ const Login = (props) => {
           <h4 className='text-uppercase'>Login</h4>
           <div className=''>
             <form onSubmit={handleFormSubmit}>
-              <label for="email" class="form-label">Email: </label>
+              <div className="form-floating mb-3">
               <input
                 className='form-control mb-4'
-                placeholder='Your email'
+                placeholder='email'
                 name='email'
                 type='email'
                 id='email'
                 value={formState.email}
                 onChange={handleChange}
               />
-              <label for="password" class="form-label">Password:</label>
+              <label for="email" class="form-label">Email: </label>
+              </div>
+              <div class="form-floating mb-3">
               <input
                 className='form-control'
                 placeholder='******'
@@ -65,6 +67,9 @@ const Login = (props) => {
                 value={formState.password}
                 onChange={handleChange}
               />
+                            <label for="password" class="form-label">Password:</label>
+              </div>
+
               <div className="d-grid ga-2 d-md-flex justify-content-end pt-3">
                 <button className='btn btn-dark btn-primary px-4' type='submit'>
                   Submit
