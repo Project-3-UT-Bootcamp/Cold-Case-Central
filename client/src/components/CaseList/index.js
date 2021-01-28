@@ -5,6 +5,7 @@ const CaseList = ({ cases, title }) => {
   if (!cases.length) {
     return <h3>No Cases Yet</h3>;
   }
+
   return (
     <div>
       <h3>Today's Cold Cases:</h3>
@@ -21,7 +22,7 @@ const CaseList = ({ cases, title }) => {
                 </Link>
               <p>Case Description: {cases.caseDescription}</p>
               <p>Case Status: {cases.caseStatus}</p>
-              <p>Case Start Date: {cases.caseStartDate}</p>
+              <p>Case Start Date: ({cases.caseStartDate})</p>
               <p className="">
                 Comments: {cases.commentCount} || Click to{' '}
                 {cases.commentCount ? 'see' : 'start'} the discussion!
