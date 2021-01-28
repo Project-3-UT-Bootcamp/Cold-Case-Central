@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/react-hooks';
 import { ADD_CASE } from '../../utils/mutations';
+import { QUERY_CASES } from '../../utils/queries';
 
 const CaseForm = () => {
     const [formState, setFormState] = useState({ caseTitle: '', caseDescription: '', caseStatus: 'Unsolved', caseStartDate: '' });
-    const [addCase, { error }] = useMutation(ADD_CASE);
+    const [addCase, { error }] = useMutation(ADD_CASE, {
+        update(cache, { data: { addCase } }) {
+            const { cases } = cache.readQuery({ query: QUERY_CASES });
+
+            cache.writeQuery({
+                query: QUERY_CASES,
+                data: { cases: [addCase, ...cases] }
+            });
+        }
+    });
 
     // update state based on for input changes
     const handleChange = (event) => {
