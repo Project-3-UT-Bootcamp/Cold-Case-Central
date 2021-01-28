@@ -14,6 +14,7 @@ const Header = () => {
                 <Link to="/" className="text-decoration-none text-body">
                     <h1>COLD CASE CENTRAL</h1>
                 </Link>
+                <p>You're primary location to find out about new unsolved mysteries, cold cases, and to discuss what you think happened.</p>
                 <div className="double-border"></div>
                 <div className="d-flex flex-row justify-content-between">
                     <span className="english-font px-3 py-2">January 28th, 2021</span>
