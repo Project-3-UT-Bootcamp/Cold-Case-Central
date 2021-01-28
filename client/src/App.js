@@ -16,6 +16,7 @@ import NoMatch from './pages/NoMatch';
 import SingleCase from './pages/SingleCase';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
+import CaseForm from './pages/CaseForm';
 
 const client = new ApolloClient({
   request: operation => {
@@ -43,6 +44,7 @@ function App() {
                 <Route exact path="/signup" component={Signup} />
                 <Route exact path="/case/:id" component={SingleCase} />
                 <Route exact path="/profile/:username?" component={Profile} />
+                <Route exact path="/caseform" component={CaseForm} />
                 <Route component={NoMatch} />
               </Switch>
             </div>
