@@ -19,25 +19,25 @@ const SingleCase = (props) => {
     return <div>Loading...</div>;
   }
   return (
-<div>
-  <div className="card mb-3">
-    <p className="card-header">
-      <span style={{ fontWeight: 700 }} className="text-light">
-        {cases.username}
-      </span>{' '}
-      case on {cases.createdAt}
-    </p>
-    <div className="card-body">
-      <p>Case Title: {cases.caseTitle}</p>
-      <p>Case Description: {cases.caseDescription}</p>
-      <p>Case Status: {cases.caseStatus}</p>
-      <p>Case Start Date: {cases.caseStartDate}</p>
-    </div>
-  </div>
+    <div>
+      <div class="m-2">
+        <h2 className="english-font text-center">{cases.caseTitle}</h2>
+        <div className="text-center">
+          <p>Case Start Date: <span><strong>{cases.caseStartDate}</strong></span></p>
+          <p>Case Status: <span><strong>{cases.caseStatus}</strong></span></p>
+          <p>Added to CCC on: <span><strong>{cases.createdAt}</strong></span> by <span><strong>{cases.username}</strong></span></p>
+        </div>
 
-  {cases.commentCount > 0 && <CommentList comments={cases.comments} />}
-  {Auth.loggedIn() && <CommentForm caseId={cases._id} />}
-</div>
+        <div>
+          <p></p>
+          <p><span><strong>The story so far:</strong></span></p> 
+          <p className="px-3">{cases.caseDescription}</p>
+        </div>
+      </div>
+      {Auth.loggedIn() && <CommentForm caseId={cases._id} />}
+      {cases.commentCount > 0 && <CommentList comments={cases.comments} />}
+
+    </div>
   );
 };
 

@@ -29,20 +29,29 @@ const CommentForm = ({ caseId }) => {
   };
 
   return (
-    <div>
+    <div className="pt-3">
+      <h3>Think you know what happened? <br />Leave a Comment!</h3>
       <p className={`${characterCount === 280 || error ? 'text-error' : ''}`}>
         Character Count: {characterCount}/280
         {error && <span>Something went wrong...</span>}
       </p>
       <form onSubmit={handleFormSubmit}>
+        <div className="form-floating mb-3">
         <textarea
-          placeholder="Leave a comment on this case..."
+          className="form-control"
+          placeholder="commentText"
           value={commentText}
+          name="commentText"
+          id="commentText"
           onChange={handleChange}>
         </textarea>
-        <button type="submit">
-          Submit
-        </button>
+        <label for="commentText">Leave a Comment</label>
+        </div>
+        <div className="d-grid ga-2 d-md-flex justify-content-md-end pt-3">
+                <button className='btn btn-dark btn-primary px-4' type='submit'>
+                  Submit
+                </button>
+              </div>
       </form>
     </div>
   )
