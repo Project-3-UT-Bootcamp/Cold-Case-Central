@@ -35,7 +35,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div class="container">
+        <div class="container content-area">
           <Header />
             <div>
               <Switch>
@@ -48,7 +48,9 @@ function App() {
                 <Route component={NoMatch} />
               </Switch>
             </div>
+            <div>
           <Footer />
+            </div>
         </div>
       </Router>
     </ApolloProvider>
