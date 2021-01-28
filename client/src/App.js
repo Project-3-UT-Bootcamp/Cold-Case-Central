@@ -43,7 +43,7 @@ function App() {
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/signup" component={Signup} />
                 <Route exact path="/case/:id" component={SingleCase} />
-                <Route exact path="/profile/:username?" component={Profile} />
+                {/* <Route exact path="/profile/:username?" component={Profile} /> */}
                 <Route exact path="/caseform" component={CaseForm} />
                 <Route component={NoMatch} />
               </Switch>
