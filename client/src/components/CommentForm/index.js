@@ -30,8 +30,9 @@ const CommentForm = ({ caseId }) => {
 
   return (
     <div className="pt-3">
+      <hr />
       <h3>Think you know what happened? <br />Leave a Comment!</h3>
-      <p className={`${characterCount === 280 || error ? 'text-error' : ''}`}>
+      <p className={`mt-4 text-end ${characterCount === 280 || error ? 'text-error' : ''}`}>
         Character Count: {characterCount}/280
         {error && <span>Something went wrong...</span>}
       </p>
