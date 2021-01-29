@@ -33,6 +33,7 @@ const CaseForm = () => {
             const { data } = await addCase({
                 variables: { ...formState }
             });
+            setFormState({ caseTitle: '', caseSummary: '', caseDescription: '', caseStatus: 'Unsolved', caseStartDate: '' });
         } catch(e) {
             console.error(e);
         }
