@@ -4,9 +4,11 @@ const { gql } = require('apollo-server-express');
 // create our typeDefs
 const typeDefs = gql`
     scalar DateTime
+
     type Case {
         _id: ID
         caseTitle: String
+        caseSummary: String
         caseDescription: String
         caseStartDate: DateTime
         caseStatus: String
@@ -50,7 +52,7 @@ const typeDefs = gql`
     type Mutation {
         login(email: String!, password: String!): Auth
         addUser(username: String!, email: String!, password: String!): Auth
-        addCase(caseTitle: String!, caseDescription: String!, caseStartDate: String!, caseStatus: String!): Case
+        addCase(caseTitle: String!, caseSummary: String!, caseDescription: String!, caseStartDate: String!, caseStatus: String!): Case
         addComment(caseId: ID!, commentText: String!): Case
         addFriend(friendId: ID!): User
     }

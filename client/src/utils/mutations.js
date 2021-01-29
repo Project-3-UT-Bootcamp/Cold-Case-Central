@@ -1,10 +1,11 @@
 import gql from "graphql-tag";
 
 export const ADD_CASE = gql`
-  mutation addCase($caseTitle: String!, $caseDescription: String!, $caseStatus: String!, $caseStartDate: String!) {
-    addCase(caseTitle: $caseTitle, caseDescription: $caseDescription, caseStatus: $caseStatus, caseStartDate: $caseStartDate) {
+  mutation addCase($caseTitle: String!, $caseSummary: String!, $caseDescription: String!, $caseStatus: String!, $caseStartDate: String!) {
+    addCase(caseTitle: $caseTitle, caseSummary: $caseSummary, caseDescription: $caseDescription, caseStatus: $caseStatus, caseStartDate: $caseStartDate) {
       _id
       caseTitle
+      caseSummary
       caseDescription
       caseStatus
       caseStartDate

@@ -10,20 +10,13 @@ const CommentList = ({ comments, title }) => {
       <h3>Comments</h3>
       {comments &&
         comments.map(comments => (
-          <div key={comments._id} className="">
-            <p className="">
-                <Link
-                to={`/profile/${comments.username}`}
-                >
-              {comments.username}
-              </Link>{''}
-              comment on {comments.createdAt}
-            </p>
-            <div className="">
-              <p>{comments.commentText}</p>
-              <p className="">
-                Comments: {comments.commentCount} || Click to{' '}
-                {comments.commentCount ? 'see' : 'start'} the discussion!
+          <div key={comments._id} className="card m-3">
+            <div class="card-body">
+              <p className="card-title">
+                <strong>{comments.username}</strong> - <span className="fs-6 text-muted">{comments.createdAt}</span>
+              </p>
+              <p class="card-text">
+                {comments.commentText}
               </p>
             </div>
           </div>

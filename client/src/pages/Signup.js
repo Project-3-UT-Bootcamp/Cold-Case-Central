@@ -35,47 +35,57 @@ const Signup = () => {
   };
 
   return (
-    <main className='flex-row justify-center mb-4'>
-      <div className='col-12 col-md-6'>
-        <div className='card'>
-          <h4 className='card-header'>Sign Up</h4>
-          <div className='card-body'>
+    <main className=''>
+      <div className='my-4 mx-2'>
+          <h4 className='text-uppercase'>Sign Up</h4>
+          <div className=''>
             <form onSubmit={handleFormSubmit}>
-              <input
-                className='form-input'
-                placeholder='Your username'
-                name='username'
-                type='username'
-                id='username'
-                value={formState.username}
-                onChange={handleChange}
-              />
-              <input
-                className='form-input'
-                placeholder='Your email'
-                name='email'
-                type='email'
-                id='email'
-                value={formState.email}
-                onChange={handleChange}
-              />
-              <input
-                className='form-input'
-                placeholder='******'
-                name='password'
-                type='password'
-                id='password'
-                value={formState.password}
-                onChange={handleChange}
-              />
-              <button className='btn d-block w-100' type='submit'>
-                Submit
-              </button>
+              <div className="form-floating mb-3">
+                <input
+                  className='form-control mb-4'
+                  placeholder="username"
+                  name='username'
+                  type='username'
+                  id='floatingUsername'
+                  value={formState.username}
+                  onChange={handleChange}
+                />
+                <label for="username" class="form-label">Username: </label>
+              </div>
+              <div className="form-floating mb-3">
+                <input
+                  className='form-control mb-4'
+                  placeholder="email"
+                  name='email'
+                  type='email'
+                  id='email'
+                  value={formState.email}
+                  onChange={handleChange}
+                />
+                <label for="email" class="form-label">Email: </label>
+              </div>
+              <div className="form-floating mb-3">
+                <input
+                  className='form-control'
+                  placeholder="password"
+                  name='password'
+                  type='password'
+                  id='password'
+                  value={formState.password}
+                  onChange={handleChange}
+                />
+                <label for="password" class="form-label">Password: </label>
+              </div>
+              
+              <div className="d-grid ga-2 d-md-flex justify-content-end pt-3">
+                <button className='btn btn-dark btn-primary px-4' type='submit'>
+                  Submit
+                </button>
+              </div>
             </form>
             {error && <div>Sign up failed</div>}
           </div>
         </div>
-      </div>
     </main>
   );
 };
