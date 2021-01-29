@@ -1,0 +1,927 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="congnd91">
+    <title>MazPage - Magazine, News, Blog, Shop, Newspaper Template</title>
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Online Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet" />
+    <!-- Vender -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/swiper.min.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" />
+    <!-- Main CSS (SCSS Compile) -->
+    <link href="css/main.css" rel="stylesheet" />
+    <!-- JavaScripts -->
+    <!--<script src="js/modernizr.js"></script>-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--preload-->
+    <div class="loader" id="page-loader">
+        <div class="loading-wrapper">
+            <p>Loading<span>.</span><span>.</span><span>.</span></p>
+        </div>
+    </div>
+    <!--menu mobile-->
+    <nav class="menu-res hidden-lg hidden-md ">
+        <div class="menu-res-inner">
+            <ul>
+                <li class="menu-item-has-children">
+                    <a href="index.html"> Home </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="index.html">Default style</a>
+                        </li>
+                        <li>
+                            <a href="index-menu.html">Menu visible</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="index-grid.html">Home grid</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="index-grid.html">Grid normal</a>
+                                </li>
+                                <li>
+                                    <a href="index-grid-large.html">Grid large</a>
+                                </li>
+                                <li>
+                                    <a href="index-grid-small.html">Grid small </a>
+                                </li>
+                                <li>
+                                    <a href="index-grid-sidebar.html">Grid sidebar </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="index-masonry.html">Home masonry</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="index-masonry.html">Masonry normal</a>
+                                </li>
+                                <li>
+                                    <a href="index-masonry-large.html">Masonry large</a>
+                                </li>
+                                <li>
+                                    <a href="index-masonry-small.html">Masonry small </a>
+                                </li>
+                                <li>
+                                    <a href="index-masonry-sidebar.html">Masonry sidebar </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index-slider.html">Home Slider </a>
+                        </li>
+                        <li>
+                            <a href="index-sidebar-left.html">Sidebar Left </a>
+                        </li>
+                        <li>
+                            <a href="index-background.html">Home Background </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="category.html">
+                        Category
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="category.html">Category default</a>
+                        </li>
+                        <li>
+                            <a href="category-small.html">Category small </a>
+                        </li>
+                        <li>
+                            <a href="category-grid.html">Category grid </a>
+                        </li>
+                        <li>
+                            <a href="category-masonry.html">Category masonry </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="single.html">Single<span></span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="single.html">Default style</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="single-thum-large.html">Single Feature</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="single-thum-large.html">Feature image format </a>
+                                </li>
+                                <li>
+                                    <a href="single-gallery.html">Gallery format</a>
+                                </li>
+                                <li>
+                                    <a href="single-gallery1.html">Gallery format I</a>
+                                </li>
+                                <li>
+                                    <a href="single-video.html">Video format</a>
+                                </li>
+
+                                <li>
+                                    <a href="single-audio.html">Music format </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="single-fullwidth.html">Full width</a>
+                        </li>
+                        <li>
+                            <a href="single-fullwidth-special.html">Single special</a>
+                        </li>
+                        <li>
+                            <a href="single-fullwidth-three-column.html">Single three columns</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="about.html">Pages<span></span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="about.html">About me</a>
+                        </li>
+                        <li>
+                            <a href="404.html">Page 404</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html"> Gallery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="shop.html">SHOP<span></span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="shop.html">Shop Default</a>
+                        </li>
+                        <li>
+                            <a href="shop-sidebar.html">Shop  Sidebar</a>
+                        </li>
+                        <li>
+                            <a href="shop-sidebar-large.html">Shop Sidebar Large</a>
+                        </li>
+                        <li>
+                            <a href="shop-single.html"> Shop Single</a>
+                        </li>
+                        <li>
+                            <a href="cart.html"> Shop Cart</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--menu-icon-->
+    <div class="menu-icon hidden-sm hidden-xs">
+        <i class="fa fa-navicon"></i>
+    </div>
+    <!--page-->
+    <div class="page">
+        <div class="mobile-bar hidden-lg hidden-md">
+            <div class="menu-icon-mobile hidden-lg hidden-md">
+                <i class="fa fa-navicon"></i>
+                <span>MENU</span>
+            </div>
+            <div class="search-icon-mobile">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="search-box-mobile">
+                <form>
+                    <input type="search" value="" placeholder="Begin typing..." class="txt-search">
+                </form>
+            </div>
+        </div>
+        <!--header-->
+        <header class="header">
+            <div class="container">
+                <div class="logo-wrap">
+                    <a href="#" class="logo">
+                        <img alt="" src="images/logo.png" />
+                    </a>
+                </div>
+                <!--menu-main-->
+                <nav class="menu-main">
+                    <div class="menu-main-inner">
+                        <ul class="hidden-sm hidden-xs">
+                            <li class="menu-item-has-children">
+                                <a href="index.html"><i class="fa fa-home"></i> Home </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="index.html">Default style</a>
+                                    </li>
+                                    <li>
+                                        <a href="index-menu.html">Menu visible</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="index-grid.html">Home grid</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="index-grid.html">Grid normal</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-grid-large.html">Grid large</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-grid-small.html">Grid small </a>
+                                            </li>
+                                            <li>
+                                                <a href="index-grid-sidebar.html">Grid sidebar </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="index-masonry.html">Home masonry</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="index-masonry.html">Masonry normal</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-masonry-large.html">Masonry large</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-masonry-small.html">Masonry small </a>
+                                            </li>
+                                            <li>
+                                                <a href="index-masonry-sidebar.html">Masonry sidebar </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="index-slider.html">Home Slider </a>
+                                    </li>
+                                    <li>
+                                        <a href="index-sidebar-left.html">Sidebar Left </a>
+                                    </li>
+                                    <li>
+                                        <a href="index-background.html">Home Background </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="category.html">
+                                    Category
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="category.html">Category default</a>
+                                    </li>
+                                    <li>
+                                        <a href="category-small.html">Category small </a>
+                                    </li>
+                                    <li>
+                                        <a href="category-grid.html">Category grid </a>
+                                    </li>
+                                    <li>
+                                        <a href="category-masonry.html">Category masonry </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="single.html">Single<span></span></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="single.html">Default style</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="single-thum-large.html">Single Feature</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="single-thum-large.html">Feature image format </a>
+                                            </li>
+                                            <li>
+                                                <a href="single-gallery.html">Gallery format</a>
+                                            </li>
+                                            <li>
+                                                <a href="single-gallery1.html">Gallery format I</a>
+                                            </li>
+                                            <li>
+                                                <a href="single-video.html">Video format</a>
+                                            </li>
+
+                                            <li>
+                                                <a href="single-audio.html">Music format </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="single-fullwidth.html">Full width</a>
+                                    </li>
+                                    <li>
+                                        <a href="single-fullwidth-special.html">Single special</a>
+                                    </li>
+                                    <li>
+                                        <a href="single-fullwidth-three-column.html">Single three columns</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="about.html">Pages<span></span></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="about.html">About me</a>
+                                    </li>
+                                    <li>
+                                        <a href="404.html">Page 404</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html"> Gallery</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="shop.html">SHOP<span></span></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="shop.html">Shop Default</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-sidebar.html">Shop  Sidebar</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-sidebar-large.html">Shop Sidebar Large</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop-single.html"> Shop Single</a>
+                                    </li>
+                                    <li>
+                                        <a href="cart.html"> Shop Cart</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="search-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="search-box">
+                            <form>
+                                <input type="search" value="" placeholder="Begin typing..." class="txt-search">
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--wrapper-->
+        <div class="wrapper">
+            <div class="wrap">
+                <div class="sitemap">
+                    <div class="sitemap-inner">
+                        <a href="index.html"><i class="fa fa-home"></i>Home</a>
+                        <span>	&#9830;</span>
+                        <a href="shop.html">Shop</a>
+                        <span>	&#9830;</span>
+                        <a href="shop-single.html">Shop single</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--hightlight news-->
+                <div class="big-page-caption">
+                    <p>  #shop single</p>
+                </div>
+                <!--cols-->
+                <div class="cols">
+                    <!--colleft-->
+                    <div class="colleft">
+
+                        <div class="shop-single">
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="post-thumbnail post-thumbnail-large">
+                                        <div class="swiper-product">
+                                            <div class="swiper-next">
+                                                NEXT
+                                            </div>
+                                            <div class="swiper-prev">
+                                                PREV
+                                            </div>
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a class="fancybox" data-fancybox-group="gallery1" href="images/shop1.jpg">
+                                                        <img alt="" src="images/shop1.jpg" />
+                                                    </a>
+                                                    <div class="hidden">
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop2.jpg">
+                                                        </a>
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop3.jpg">
+                                                        </a>
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop4.jpg">
+                                                        </a>
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop5.jpg">
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="swiper-slide">
+                                                    <a class="fancybox" data-fancybox-group="gallery1" href="images/shop2.jpg">
+                                                        <img alt="" src="images/shop2.jpg" />
+                                                    </a>
+                                                    <div class="hidden">
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop1.jpg">
+                                                        </a>
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop3.jpg">
+                                                        </a>
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop4.jpg">
+                                                        </a>
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop5.jpg">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a class="fancybox" data-fancybox-group="gallery1" href="images/shop3.jpg">
+                                                        <img alt="" src="images/shop3.jpg" />
+                                                    </a>
+                                                    <div class="hidden">
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop2.jpg">
+                                                        </a>
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop3.jpg">
+                                                        </a>
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop4.jpg">
+                                                        </a>
+                                                        <a class="fancybox" data-fancybox-group="gallery1" href="images/shop5.jpg">
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="product-des">
+                                        <h1>3D LASER CUT MODELS</h1>
+                                        <div class="price">
+                                            <div class="price">
+                                                <span>€45.00</span>
+                                                <span class="old">€65.00</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="votes">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="product-sapo">
+                                            <p>Etiam lobortis dolor eros sed lorem sodales imperdiet dapibus. Maecenas faucibus urna sed turpis lacinia consectetur. Mauris dolor bibendum nibh consectetuer.</p>
+                                        </div>
+                                        <div class="quantity">
+                                            <input type="button" value="-">
+                                            <input type="text" name="quantity" value="1">
+                                            <input type="button" value="+">
+                                        </div>
+
+                                        <a href="#" class="my-btn">Add to cart</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="shop-tab">
+                                <div class="shop-tab-caption">
+                                    <ul role="tablist">
+                                        <li class="active">
+                                            <a href="#tab-product1" role="tab" data-toggle="tab">
+                                                DESCRIPTION
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab-product2" role="tab" data-toggle="tab">
+                                                ADDITIONAL INFORMATION
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="tab-product1">
+                                        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                        <ul>
+                                            <li>Justo duo dolores et ea rebum</li>
+                                            <li>Duis autem vel eum iriure dolor</li>
+                                            <li>Stet clita kasd gubergren</li>
+                                        </ul>
+
+                                        <p>  In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zril delenit augue duis dolore te feugait.</p>
+                                        <p>  In hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zril delenit augue duis dolore te feugait.</p>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane " id="tab-product2">
+                                        <table class="table table-responsive">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Capacity</td>
+                                                    <td>261</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Hip Belt</td>
+                                                    <td>Adjustable</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Reflective Piping</td>
+                                                    <td>Yes</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Size</td>
+                                                    <td>250 cm x 343cm</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Color</td>
+                                                    <td>Gray</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Waterproof</td>
+                                                    <td>Yes</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="related-post">
+                                <div class="box-detail-caption">
+                                    <span>RELATED PRODUCTS</span>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="shop-item">
+                                            <div class="shop-img">
+                                                <span class="like">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </span>
+                                                <a href="shop-single.html">  <img alt="" src="images/shop1.jpg" /></a>
+
+                                                <a href="shop-single.html" class="add-to-cart">ADD TO CART</a>
+                                            </div>
+                                            <div class="shop-des">
+                                                <h3><a href="shop-single.html">LE PARC MINOTTI CHAIR</a></h3>
+
+                                                <div class="price">
+                                                    <span>€169.00</span>
+                                                </div>
+                                                <div class="votes">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="shop-item">
+                                            <div class="shop-img">
+                                                <span class="like">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </span>
+                                                <strong class="sale">
+                                                    -25%
+                                                </strong>
+                                                <a href="shop-single.html">
+                                                    <img alt="" src="images/shop2.jpg" />
+                                                </a>
+
+                                                <a href="shop-single.html" class="add-to-cart">ADD TO CART</a>
+                                            </div>
+                                            <div class="shop-des">
+                                                <h3><a href="shop-single.html">DSR EIFFEL CHAIR</a></h3>
+
+                                                <div class="price">
+                                                    <span>€135.00</span> <span class="old">€169.00</span>
+                                                </div>
+                                                <div class="votes">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="shop-item">
+                                            <div class="shop-img">
+                                                <span class="like">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </span>
+                                                <a href="shop-single.html">
+                                                    <img alt="" src="images/shop3.jpg" />
+                                                </a>
+
+                                                <a href="shop-single.html" class="add-to-cart">ADD TO CART</a>
+                                            </div>
+                                            <div class="shop-des">
+                                                <h3><a href="shop-single.html"> PENDANT LIGHTS</a></h3>
+
+                                                <div class="price">
+                                                    <span>€45.00</span>
+                                                </div>
+                                                <div class="votes">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--colright-->
+                    <div class="colright">
+                        <!--box search-->
+                        <div class="box-search-sidebar">
+                            <input type="search" placeholder="Begin typing...">
+                            <button>Search</button>
+                        </div>
+                        <!--box shopping cart-->
+                        <div class="col-caption">
+                            <span> SHOPPING CART</span>
+                        </div>
+                        <div class="box-shopping-cart">
+                            <div class="sc-item">
+                                <h4>LE PARC MINOTTI CHAIR</h4>
+                                <p>x 1 x €169.00</p>
+                            </div>
+
+                            <div class="sc-item">
+                                <h4>PENDANT LIGHTS</h4>
+                                <p>x 2 x €135.00</p>
+                            </div>
+                            <h5>Subtotal:  <span>$208</span></h5>
+
+                            <a href="#" class="my-btn btn-view-cart">View Cart</a>
+                            <a href="#" class="my-btn">Checkout</a>
+
+                        </div>
+
+                        <!--box filter-->
+                        <div class="col-caption">
+                            <span> FILTER BY PRICE</span>
+                        </div>
+                        <div class="box-filter">
+                            <div class="slider-budget">
+                                <input id="price-slider" type="text" data-slider-min="0" data-slider-max="600" data-slider-step="1" data-slider-value="[100,450]" />
+                            </div>
+                            <p>Price: <span class="budget-min"> $<em>100</em> </span> - <span class="budget-max"> $<em>450</em> </span> </p>
+                        </div>
+
+
+                        <!--box popular product-->
+                        <div class="col-caption">
+                            <span> POPULAR PRODUCTS</span>
+                        </div>
+                        <div class="list-popular-product">
+                            <div class="pp-item">
+                                <div class="shop-img">
+                                    <a href="shop-single.html">
+                                        <img alt="" src="images/shop3.jpg" />
+                                    </a>
+                                </div>
+                                <div class="shop-des">
+                                    <h3><a href="shop-single.html"> PENDANT LIGHTS</a></h3>
+                                    <div class="price">
+                                        <span>€45.00</span>
+                                        <span class="old">€65.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pp-item">
+                                <div class="shop-img">
+                                    <a href="shop-single.html">
+                                        <img alt="" src="images/shop4.jpg" />
+                                    </a>
+                                </div>
+                                <div class="shop-des">
+                                    <h3><a href="shop-single.html"> 3D LASER CUT MODELS</a></h3>
+                                    <div class="price">
+                                        <span>€250.00</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pp-item">
+                                <div class="shop-img">
+                                    <a href="shop-single.html">
+                                        <img alt="" src="images/shop5.jpg" />
+                                    </a>
+                                </div>
+                                <div class="shop-des">
+                                    <h3><a href="shop-single.html"> CARL HANSEN CH25</a></h3>
+                                    <div class="price">
+                                        <span>€120.00</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pp-item">
+                                <div class="shop-img">
+                                    <a href="shop-single.html">
+                                        <img alt="" src="images/shop1.jpg" />
+                                    </a>
+                                </div>
+                                <div class="shop-des">
+                                    <h3><a href="shop-single.html"> E PARC MINOTTI CHAIR</a></h3>
+                                    <div class="price">
+                                        <span>€169.00</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <!--bottom-->
+                <div class="bottom">
+                    <div class="bottom-inner">
+                        <div class="bottom-col">
+                            <div class="col-caption">
+                                <span>RECENT POST</span>
+                            </div>
+                            <ul class="recent-post">
+                                <li>
+                                    <p><a href="single-gallery.html">	Maecenas semper ante sed lectus egestas.</a></p>
+                                </li>
+                                <li>
+                                    <p><a href="single.html">	Proin eget tortor risus.</a></p>
+                                </li>
+
+                                <li>
+                                    <p><a href="single-fullwidth-special.html">	The beautifull girl.</a></p>
+                                </li>
+
+                                <li>
+                                    <p><a href="single-fullwidth-three-column.html">	Simply dummy text</a></p>
+                                </li>
+
+                                <li>
+                                    <p><a href="single-audio.html">	What The Font</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom-col">
+                            <div class="col-caption">
+                                <span>TAG CLOUD</span>
+                            </div>
+                            <div class="list-tags">
+                                <p class="hidden"></p>
+                                <a href="#"> special</a>
+                                <a href="3"> USA</a>
+                                <a href="#"> spotlight</a>
+                                <a href="#"> Days news</a>
+                                <a href="3"> review</a>
+                                <a href="#"> spotlight</a>
+                                <a href="#"> max in</a>
+                                <a href="#"> special</a>
+                                <a href="3"> cloud </a>
+                                <a href="#"> spotlight</a>
+                                <a href="#"> Lorem text</a>
+                                <a href="3"> review</a>
+                                <a href="#"> spotlight</a>
+                                <a href="#"> sky blue</a>
+                                <a href="3"> review</a>
+                                <a href="#"> hot news</a>
+                                <a href="#"> ciz themes</a>
+                                <a href="3"> review</a>
+                                <a href="#"> spotlight</a>
+                                <a href="#"> spotlight</a>
+                                <a href="#"> Lorem text</a>
+                                <a href="3"> review</a>
+                                <a href="#"> spotlight</a>
+                                <a href="#"> sky blue</a>
+                                <a href="3"> review</a>
+                            </div>
+                        </div>
+                        <div class="bottom-col">
+                            <div class="col-caption">
+                                <span>INSTAGRAM</span>
+                            </div>
+                            <ul class="instagram-pics">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/i1.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/i2.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/i3.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/i4.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/i5.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/i6.jpg" alt="" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <a href="#" class="logo">
+                <img alt="" src="images/logo1.png" />
+            </a>
+            <div class="footer-bar">
+                <div class="allright">
+                    <p> All rights reserved. Designed by <a href="#"> CizThemes</a></p>
+                </div>
+                <div class="social-footer">
+                    <a href="#" class="facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="google">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                    <a href="#" class="pinterest">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                    <a href="#" class="youtube">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </footer>
+    </div>
+    <!--go to top-->
+    <span class="totop">
+        Go to
+        <em>TOP</em>
+    </span>
+    <!--scrip file-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.matchHeight.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
