@@ -9,7 +9,8 @@
 |[Contact](#contact)|
 
 ---
-## Project Description (*incomplete*)
+## Project Description
+An blog-style application focused on unsolved mysteries. Users can signup for an account and login to commment on posts. 
 ---
 ## Installation (*incomplete*)
 Fork or clone the repo and open the root file from the terminal. Run `npm i` to install dependencies. 
@@ -75,9 +76,10 @@ Fork or clone the repo and open the root file from the terminal. Run `npm i` to 
 > CSS-in-JS\
 > Stripe payment platform
 ---
-# License *incomplete*
+# License
+MIT
 ---
-# Contact *incomplete*
+# Contact
 
 | Name             | Role          |
 | :---------------:|:-------------:|
