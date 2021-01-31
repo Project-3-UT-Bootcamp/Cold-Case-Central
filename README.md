@@ -12,7 +12,7 @@
 ## Project Description (*incomplete*)
 ---
 ## Installation (*incomplete*)
-`npm i` `npm i dotenv` `npx create-react-app my-app` `npm start`
+Fork or clone the repo and open the root file from the terminal. Run `npm i` to install dependencies. 
 ---
 ## Grading Requirements
 
@@ -81,7 +81,8 @@
 
 | Name             | Role          |
 | :---------------:|:-------------:|
-| Sarah Safarzadeh | -             |
-| Amanda Babineaux | -             |
+| Sarah Safarzadeh | -  Front End  |
+| Amanda Babineaux | -  Front End  |
+| Rachel Forsyth   | -  Back End   |
 | Mario Essig      | -             |
 | Lorena Kell      | -             |
