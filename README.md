@@ -5,14 +5,18 @@
 |[Description](#project-description)|
 |[Installation](#installation)|
 |[Grading Requirements](#grading-requirements)|
+|[Deployed App](#deployed-application)
 |[License](#license)|
 |[Contact](#contact)|
 
 ---
-## Project Description (*incomplete*)
+## Project Description
+>An blog-style application focused on unsolved mysteries. Users can signup for an account and login to commment on posts. 
+
+![screenshot](/client/public/deployedApp.png)
 ---
-## Installation (*incomplete*)
-`npm i` `npm i dotenv` `npx create-react-app my-app` `npm start`
+## Installation
+>Fork or clone the repo and open the root file from the terminal. Run `npm i` to install dependencies. 
 ---
 ## Grading Requirements
 
@@ -75,13 +79,19 @@
 > CSS-in-JS\
 > Stripe payment platform
 ---
-# License *incomplete*
+# Deployed Application
+* [Heroku](mighty-cliffs-08051.herokuapp.com/)
+* [GitHub](https://project-3-ut-bootcamp.github.io/Cold-Case-Central/)
 ---
-# Contact *incomplete*
+# License
+MIT
+---
+# Contact
 
 | Name             | Role          |
 | :---------------:|:-------------:|
-| Sarah Safarzadeh | -             |
-| Amanda Babineaux | -             |
+| Sarah Safarzadeh | -  Front End  |
+| Amanda Babineaux | -  Front End  |
+| Rachel Forsyth   | -  Back End   |
 | Mario Essig      | -             |
 | Lorena Kell      | -             |
