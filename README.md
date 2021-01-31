@@ -14,7 +14,7 @@ An blog-style application focused on unsolved mysteries. Users can signup for an
 
 ![screenshot](/client/public/deployedApp.png)
 ---
-## Installation (*incomplete*)
+## Installation
 Fork or clone the repo and open the root file from the terminal. Run `npm i` to install dependencies. 
 ---
 ## Grading Requirements
