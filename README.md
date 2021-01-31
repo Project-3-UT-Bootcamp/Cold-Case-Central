@@ -5,17 +5,18 @@
 |[Description](#project-description)|
 |[Installation](#installation)|
 |[Grading Requirements](#grading-requirements)|
+|[Deployed App](#deployed-application)
 |[License](#license)|
 |[Contact](#contact)|
 
 ---
 ## Project Description
-An blog-style application focused on unsolved mysteries. Users can signup for an account and login to commment on posts. 
+>An blog-style application focused on unsolved mysteries. Users can signup for an account and login to commment on posts. 
 
 ![screenshot](/client/public/deployedApp.png)
 ---
 ## Installation
-Fork or clone the repo and open the root file from the terminal. Run `npm i` to install dependencies. 
+>Fork or clone the repo and open the root file from the terminal. Run `npm i` to install dependencies. 
 ---
 ## Grading Requirements
 
@@ -77,6 +78,10 @@ Fork or clone the repo and open the root file from the terminal. Run `npm i` to 
 #### Considerations
 > CSS-in-JS\
 > Stripe payment platform
+---
+# Deployed Application
+[Heroku](mighty-cliffs-08051.herokuapp.com/)
+[GitHub](https://project-3-ut-bootcamp.github.io/Cold-Case-Central/)
 ---
 # License
 MIT
