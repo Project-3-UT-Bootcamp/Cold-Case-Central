@@ -6,6 +6,7 @@ import Auth from '../utils/auth';
 
 import CaseList from "../components/CaseList";
 
+// form to add cases to the database
 const CaseFormPage = () => {
 
   const { loading, data } = useQuery(QUERY_CASES);

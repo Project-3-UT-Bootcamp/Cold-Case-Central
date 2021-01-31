@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
+    "@tinymce/tinymce-react": "^3.9.0",
     "apollo-boost": "^0.4.9",
     "graphql": "^15.5.0",
     "graphql-tag": "^2.11.0",
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-pwa-manifest": "^4.3.0"
   }
 }

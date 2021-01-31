@@ -37,20 +37,20 @@ function App() {
       <Router>
         <div class="container content-area">
           <Header />
-            <div>
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/signup" component={Signup} />
-                <Route exact path="/case/:id" component={SingleCase} />
-                {/* <Route exact path="/profile/:username?" component={Profile} /> */}
-                <Route exact path="/caseform" component={CaseForm} />
-                <Route component={NoMatch} />
-              </Switch>
-            </div>
-            <div>
-          <Footer />
-            </div>
+          <div>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/signup" component={Signup} />
+              <Route exact path="/case/:id" component={SingleCase} />
+              {/* <Route exact path="/profile/:username?" component={Profile} /> */}
+              <Route exact path="/caseform" component={CaseForm} />
+              <Route component={NoMatch} />
+            </Switch>
+          </div>
+          <div>
+            <Footer />
+          </div>
         </div>
       </Router>
     </ApolloProvider>
