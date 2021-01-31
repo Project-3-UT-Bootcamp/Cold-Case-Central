@@ -11,6 +11,8 @@
 ---
 ## Project Description
 An blog-style application focused on unsolved mysteries. Users can signup for an account and login to commment on posts. 
+
+![screenshot](/client/public/deployedApp.png)
 ---
 ## Installation (*incomplete*)
 Fork or clone the repo and open the root file from the terminal. Run `npm i` to install dependencies. 
