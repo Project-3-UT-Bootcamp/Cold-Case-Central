@@ -80,8 +80,8 @@
 > Stripe payment platform
 ---
 # Deployed Application
-[Heroku](mighty-cliffs-08051.herokuapp.com/)
-[GitHub](https://project-3-ut-bootcamp.github.io/Cold-Case-Central/)
+* [Heroku](mighty-cliffs-08051.herokuapp.com/)
+* [GitHub](https://project-3-ut-bootcamp.github.io/Cold-Case-Central/)
 ---
 # License
 MIT
